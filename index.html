@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Лабораторна робота №6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+  <div id="header">
+    <div id="top">
+    <div id="navigContainer">
+   <button onclick="goBack()" id="navigBotton"><</button>
+   <button onclick="goHome()" id="navigBotton"><i class="fas fa-home"></i></button>
+   <button onclick="goForward()" id="navigBotton">></button>
+  </div>
+  <div id="searchContainer">
+    <input id="url">
+    <button onclick="search()" id="navigBotton"><i class="fas fa-search"></i></button>
+    <button onclick="showHistory()" id="navigBotton"><i class="fas fa-history"></i></button>
+    <button onclick="addBookmark()" id="navigBotton"><i class="fas fa-bookmark"></i></button>
+  </div>
+  </div>
+  <div>
+  <div id="bookmarksContainer"></div> </div>
+   </div>
+   
+   <div>
+   <webview id="myWebView" src="https://www.google.com" ></webview></div>
+   <script src="./script.js"></script>
+  </body>
+</html>
